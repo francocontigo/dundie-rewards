@@ -31,6 +31,7 @@ setup(
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="Ricardo Augusto Franco",
+    python_requires=">=3.11",
     packages=find_packages(),
     entry_points={"console_scripts": ["dundie = dundie.__main__:main"]},
     install_requires=read_requirements("requirements.txt"),
