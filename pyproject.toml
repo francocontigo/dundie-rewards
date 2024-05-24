@@ -11,3 +11,19 @@ testpaths = [
 [tool.flake8]
 exclude = ["venv", "build"]
 max-line-length = 79
+
+
+[tool.black]
+line-length = 79
+target-version = ["py39"]
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.venv
+  | _build
+  | build
+  | dist
+  | migrations
+)/
+'''
