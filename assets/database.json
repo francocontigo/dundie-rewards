@@ -12,8 +12,8 @@
         }
     },
     "balance": {
-        "jim@dundermifflin.com": 500,
-        "schrute@dudermifflin.com": 100
+        "jim@dundermifflin.com": 700,
+        "schrute@dudermifflin.com": 300
     },
     "movement": {
         "jim@dundermifflin.com": [
@@ -21,6 +21,56 @@
                 "date": "2024-05-31T14:20:54.232265",
                 "actor": "system",
                 "value": 500
+            },
+            {
+                "date": "2024-05-31T15:33:17.941669",
+                "actor": null,
+                "value": 30
+            },
+            {
+                "date": "2024-05-31T15:33:31.315352",
+                "actor": null,
+                "value": 332
+            },
+            {
+                "date": "2024-05-31T15:38:17.671147",
+                "actor": null,
+                "value": -62
+            },
+            {
+                "date": "2024-05-31T15:39:14.391549",
+                "actor": null,
+                "value": 62
+            },
+            {
+                "date": "2024-05-31T15:39:21.620004",
+                "actor": null,
+                "value": -62
+            },
+            {
+                "date": "2024-05-31T15:40:25.744171",
+                "actor": null,
+                "value": 10
+            },
+            {
+                "date": "2024-05-31T15:40:37.281289",
+                "actor": null,
+                "value": 10
+            },
+            {
+                "date": "2024-05-31T15:40:44.456723",
+                "actor": null,
+                "value": -200
+            },
+            {
+                "date": "2024-05-31T15:40:51.539214",
+                "actor": null,
+                "value": 100
+            },
+            {
+                "date": "2024-05-31T15:40:55.390786",
+                "actor": null,
+                "value": -20
             }
         ],
         "schrute@dudermifflin.com": [
@@ -28,6 +78,56 @@
                 "date": "2024-05-31T14:20:58.342558",
                 "actor": "system",
                 "value": 100
+            },
+            {
+                "date": "2024-05-31T15:33:17.941669",
+                "actor": null,
+                "value": 30
+            },
+            {
+                "date": "2024-05-31T15:33:31.315352",
+                "actor": null,
+                "value": 332
+            },
+            {
+                "date": "2024-05-31T15:38:17.671147",
+                "actor": null,
+                "value": -62
+            },
+            {
+                "date": "2024-05-31T15:39:14.391549",
+                "actor": null,
+                "value": 62
+            },
+            {
+                "date": "2024-05-31T15:39:21.620004",
+                "actor": null,
+                "value": -62
+            },
+            {
+                "date": "2024-05-31T15:40:25.744171",
+                "actor": null,
+                "value": 10
+            },
+            {
+                "date": "2024-05-31T15:40:37.281289",
+                "actor": null,
+                "value": 10
+            },
+            {
+                "date": "2024-05-31T15:40:44.456723",
+                "actor": null,
+                "value": -200
+            },
+            {
+                "date": "2024-05-31T15:40:51.539214",
+                "actor": null,
+                "value": 100
+            },
+            {
+                "date": "2024-05-31T15:40:55.390786",
+                "actor": null,
+                "value": -20
             }
         ]
     },
