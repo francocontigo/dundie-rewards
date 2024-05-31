@@ -20,10 +20,10 @@ lint:
 	@venv/bin/pflake8
 
 test:
-	@venv/bin/pytest -vv -s
+	@venv/bin/pytest -vv -s --forked
 
 testci:
-	@venv/bin/pytest -vv -v --junitxml=test-result.xml
+	@venv/bin/pytest -vv -v --junitxml=test-result.xml --forked
 
 watch:
 	.venv/bin/ptw -- -vv -s

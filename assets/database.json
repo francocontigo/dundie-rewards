@@ -1,0 +1,42 @@
+{
+    "people": {
+        "jim@dundermifflin.com": {
+            "name": "Jim Halpert",
+            "dept": "Sales",
+            "role": "Salesman"
+        },
+        "schrute@dudermifflin.com": {
+            "name": "Dwight Schrute",
+            "dept": "Sales",
+            "role": "Manager"
+        }
+    },
+    "balance": {
+        "jim@dundermifflin.com": 500,
+        "schrute@dudermifflin.com": 100
+    },
+    "movement": {
+        "jim@dundermifflin.com": [
+            {
+                "date": "2024-05-31T14:20:54.232265",
+                "actor": "system",
+                "value": 500
+            }
+        ],
+        "schrute@dudermifflin.com": [
+            {
+                "date": "2024-05-31T14:20:58.342558",
+                "actor": "system",
+                "value": 100
+            }
+        ]
+    },
+    "users": {
+        "jim@dundermifflin.com": {
+            "password": "DVhp5USk"
+        },
+        "schrute@dudermifflin.com": {
+            "password": "nMTimzQa"
+        }
+    }
+}
