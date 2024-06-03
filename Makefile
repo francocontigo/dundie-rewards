@@ -1,4 +1,4 @@
-.PHONY: install virtualenv ipython clean test pflake8 black
+.PHONY: install virtualenv ipython clean test pflake8 black build
 
 
 install:
@@ -42,3 +42,6 @@ clean:            ## Clean unused files.
 	@rm -rf htmlcov
 	@rm -rf .tox/
 	@rm -rf docs/_build
+
+build:
+	@python setup.py sdist bdist_wheel
