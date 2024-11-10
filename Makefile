@@ -1,32 +1,34 @@
-.PHONY: install virtualenv ipython clean test pflake8 black build
+.PHONY: install virtualenv ipython clean test pflake8 fmt lint watch docs docs-serve build
 
 
 install:
 	@echo "Installing for dev environment"
-	@venv/bin/python -m pip install -e '.[dev]'
+	@.venv/bin/python -m pip install -e '.[test,dev]'
 
 
 virtualenv:
-	@venv/bin/python -m pip -m venv .venv
+	@python -m venv .venv
 
 
 ipython:
-	@venv/bin/ipython
+	@.venv/bin/ipython
 
-fmt:
-	@venv/bin/black dundie tests integration
 
 lint:
-	@venv/bin/pflake8
+	#@.venv/bin/mypy --ignore-missing-imports dundie
+	@.venv/bin/pflake8
+
+fmt:
+	@.venv/bin/isort --profile=black -m 3 dundie tests integration
+	@.venv/bin/black dundie tests integration
 
 test:
-	@venv/bin/pytest -vv -s --forked
-
-testci:
-	@venv/bin/pytest -vv -v --junitxml=test-result.xml --forked
+	@.venv/bin/pytest -s --forked
 
 watch:
-	.venv/bin/ptw -- -vv -s
+	# @.venv/bin/ptw
+	@ls **/*.py | entr pytest --forked
+
 
 clean:            ## Clean unused files.
 	@find ./ -name '*.pyc' -exec rm -f {} \;
@@ -43,5 +45,19 @@ clean:            ## Clean unused files.
 	@rm -rf .tox/
 	@rm -rf docs/_build
 
+
+docs:
+	@mkdocs build --clean
+
+
+docs-serve:
+	@mkdocs serve
+
 build:
 	@python setup.py sdist bdist_wheel
+
+publish-test:
+	@twine upload --repository testpypi dist/*
+
+publish:
+	@twine upload dist/*

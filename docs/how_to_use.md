@@ -50,6 +50,7 @@ dundie show --dept=Sales
 
 > **NOTE** passing `--output=file.json` will save a json file with the results.
 
+
 ## Adding points
 
 An admin user can easily add points to any user or dept.

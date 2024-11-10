@@ -9,8 +9,9 @@ pip install dundie
 
 ## Install from source
 
+
 ```bash
-git clone https://github.com/francocontigo/dundie-rewards
+git clone https://github.com/rochacbruno/dundie-rewards
 cd dundie-rewards
-pip install -e '.[dev]'
+make install
 ```
